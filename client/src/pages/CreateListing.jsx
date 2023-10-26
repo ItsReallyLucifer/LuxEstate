@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function CreateListing() {
-    const {currentUser} = useSelector(state => state.user);
+    const {currentUser} = useSelector((state) => state.user);
     const navigate = useNavigate();
     const [files, setFiles] = useState([]);
     const [formData, setFormData] = useState({
@@ -175,7 +175,9 @@ export default function CreateListing() {
                         <input type="number" id='regularPrice' min='50' max='10000000' required className='p-3 border border-gray-300 rounded-lg' onChange={handleChange} value={formData.regularPrice}/>
                         <div className='flex flex-col item-center'>
                         <p>Regular price</p>
-                        <span className='text-xs'>($ / month)</span>
+                        {formData.type === 'rent' && (
+                          <span className='text-xs'>($ / month)</span>
+                        )}
                         </div>
                     </div>
                     {formData.offer && (
@@ -183,7 +185,9 @@ export default function CreateListing() {
                         <input type="number" id='discountPrice' min='0' max='10000000' required className='p-3 border border-gray-300 rounded-lg' onChange={handleChange} value={formData.discountPrice}/>
                         <div className='flex flex-col item-center'>
                         <p>Discounted price</p>
-                        <span className='text-xs'>($ / month)</span>
+                        {formData.type === 'rent' && (
+                         <span className='text-xs'>($ / month)</span>
+                        )}
                         </div>
                     </div>
                     )}
