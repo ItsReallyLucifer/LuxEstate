@@ -2,7 +2,7 @@
 
 LuxEstate is an innovative Real Estate application that specializes in helping clients buy, sell, and rent properties directly with the property owner.
 
-<img src=https://github.com/THIS-IS-THE-MAIN-APP-.png>
+<img src="https://github.com/ItsReallyLucifer/LuxEstate/blob/b46c4884420b6d49ed53e91a03d36d829ae04795/client/src/assets/imgs/LuxEstateMain.png">
 
 ## Features
 
@@ -16,7 +16,9 @@ LuxEstate is an innovative Real Estate application that specializes in helping c
 ## Technologies used
 
 **Authentication**: Google OAuth w/Firebase & JWT(JSON Web Token).
+
 **Image hosting & Auth**: Firebase
+
 **Built using**: Vite + React.js, Redux Toolkit, JavaScript, Tailwind CSS, Express.js, MongoDB. 
 
 
@@ -31,7 +33,7 @@ To sign up, simply click on "Sign in" on the top right which will lead you to a 
 ## How It Works
 
 Once signed in, navigate to your profile by clicking on your profile image on the top right. To create a listing, simply click on the green "create listing" button which will take you to the "create listing" page. Fill out the form and upload desired property images then click on the green "upload" button. Once completed, click on the "Create Listing" button. You will be able to view, edit, or delete your listings on your profile page. 
-<img src=https://github.com/THIS-IS-HOW-TO-CREATE-LISTING/-SIGN-IN.png>
+<img src="https://github.com/ItsReallyLucifer/LuxEstate/blob/b46c4884420b6d49ed53e91a03d36d829ae04795/client/src/assets/imgs/HowToCreateListing.png">
 
 
 
